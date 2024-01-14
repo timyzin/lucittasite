@@ -1,0 +1,123 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+
+body {
+    background-color: #202020;
+    text-align: justify;
+    margin: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #bdf0ff;
+}
+.link:hover {
+    background-color: #95bfcc3a;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.link::before {
+    content: '🔗';
+}
+
+header {
+    background-color: #262626;
+    padding: 45px;
+    border-radius: 3px;
+}
+
+header > h1 {
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    display: inline;
+}
+
+header > h1 > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav {
+    text-align: left;
+    background-color: #33333398;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav > a{
+    text-decoration: none;
+    margin: 1px;
+    color: floralwhite;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+nav > a:hover {
+    background-color: rgb(138, 135, 129);
+}
+
+#p-detalhes {
+    margin-top: 5px;
+    margin-bottom: 13px;
+    color: #ebebeb;
+    font-family: 'Roboto Mono', monospace;
+    text-align: justify;
+}
+
+main {
+    margin: 5px 0px;
+    background-color: #262626;
+    padding: 45px;
+    border-radius: 3px;
+}
+
+article {
+    background-color: #383838;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+article > h2::before {
+    content: '| ';
+}
+
+article > h2 {
+    color: floralwhite;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 5px;
+    background-color: #5858588a;
+    padding: 5px 0px;
+    border-radius: 1px;
+}
+
+article > p {
+    color: rgb(238, 237, 234);
+    margin: 15px 10px;
+    text-indent: 10px;
+}
+
+strong {
+    color: rgb(202, 202, 202);
+}
+
+footer {
+    margin: 5px 0px;
+    background-color: #262626;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+footer > p {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+}
