@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 body {
     background-color: #202020;
@@ -99,7 +100,7 @@ article > p {
 }
 
 strong {
-    color: rgb(202, 202, 202);
+    color: rgb(143, 143, 143);
 }
 
 footer {
@@ -121,3 +122,84 @@ li {
     text-align: center;
     margin: 10px;
 }
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-download {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(94, 177, 0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px rgb(107, 201, 0);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-download:hover {
+    background-color: rgb(130, 243, 0);
+}
+
+.btn-download:active {
+    background-color: rgb(201, 255, 140);
+}
+
+.btn-download::before {
+    content: '🗃️';
+}
+
+#about_main {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+#about_text {
+    margin: 10px;
+    width: 900px;
+    text-align: center;
+}
+
+#about_text > p {
+    color: rgb(238, 237, 234);
+    margin: 15px 10px;
+    text-indent: 10px;
+    text-align: left;
+}
+
+
+#about_text > h2 {
+    text-align: left;
+    color: floralwhite;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 5px;
+    background-color: #5858588a;
+    padding: 5px 0px;
+    border-radius: 1px;
+}
+
+#about_text > h2::before {
+    content: '| ';
+}
+
+#about_text > a {
+    justify-content: left;
+}
+
+#about_profile_img {
+    margin: 10px;
+    width: 600px;
+    text-align: center;
+}
+
+#profile_img {
+    border-radius: 50%;
+    height: 300px;
+    box-shadow: 3px 3px 8px -1px black;
+}
+
