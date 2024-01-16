@@ -2,37 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+:root {
+    --default-color: #4C4D4D;
+}
+
 
 body {
-    background-color: #202020;
+    background-color: #1E1D24;
     text-align: justify;
     margin: 20px;
 }
 
-.link {
-    text-decoration: none;
-    color: #bdf0ff;
-}
-.link:hover {
-    background-color: #95bfcc3a;
-    border-radius: 5px;
-    padding: 3px;
-}
-
-.link::before {
-    content: '🔗';
-}
-
 header {
-    background-color: #262626;
-    padding: 45px;
-    border-radius: 3px;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1000px;
+    text-align: left;
+    background-color: var(--default-color);
+    padding: 10px 45px;
+    border-radius: 3px 3px;
+    justify-content: space-between;
 }
 
 header > h1 {
     color: #ffffff;
-    font-family: 'Roboto Mono', monospace;
-    display: inline;
+    margin-bottom: 0px;
+    font-family: 'Salsa', cursive;
+    font-size: 2.6em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
 }
 
 header > h1 > a {
@@ -40,8 +39,16 @@ header > h1 > a {
     color: #ffffff;
 }
 
+#logo-intro {
+    background-color: #bdf0ff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+}
+
 nav {
-    text-align: left;
+    text-align: center;
     background-color: #33333398;
     padding: 10px;
     border-radius: 5px;
@@ -60,37 +67,57 @@ nav > a:hover {
 }
 
 #p-detalhes {
+    text-align: left;
+    font-size: 1.3em;
     margin-top: 5px;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
     color: #ebebeb;
     font-family: 'Roboto Mono', monospace;
-    text-align: justify;
 }
 
 main {
-    margin: 5px 0px;
-    background-color: #262626;
-    padding: 45px;
-    border-radius: 3px;
+    margin: auto;
+    background-color: var(--default-color);
+    padding: 10px 45px;
+    min-width: 320px;
+    max-width: 1000px;
 }
 
 article {
     background-color: #383838;
     padding: 5px;
+    line-height: 1.5em;
     border-radius: 5px;
 }
 
-article > h2::before {
-    content: '| ';
+article > h1 {
+    text-align: center;
+    color: floralwhite;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 5px;
+    background-color: #5858588a;
+    padding: 5px 0px;
+    border-radius: 5px;
+    font-size: 1.5;
+}
+
+
+article > h1::after {
+    content: '🤓';
 }
 
 article > h2 {
     color: floralwhite;
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 5px;
-    background-color: #5858588a;
+    background-image: linear-gradient(to right, #66666698, transparent);
     padding: 5px 0px;
-    border-radius: 1px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+article > h2::before {
+    content: '| ';
 }
 
 article > p {
@@ -99,15 +126,35 @@ article > p {
     text-indent: 10px;
 }
 
+.link {
+    text-decoration: none;
+    color: #bdf0ff;
+}
+.link:hover {
+    background-color: #95bfcc3a;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.link::after {
+    content: '🔗';
+}
+
+
 strong {
-    color: rgb(143, 143, 143);
+    color: #D6A90A;
+    font-weight: bold;
 }
 
 footer {
-    margin: 5px 0px;
-    background-color: #262626;
+    background-color: var(--default-color);
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 0px 0px 3px 3px;
+    min-width: 320px;
+    max-width: 1000px;
+    padding: 10px 45px;
+    margin: auto;
+    display: flex;
 }
 
 footer > p {
@@ -117,9 +164,14 @@ footer > p {
     font-size: 13px;
 }
 
+article > ul {
+    display: flex;
+    columns: 3;
+}
+
 li {
     list-style-type: none;
-    text-align: center;
+    text-align: left;
     margin: 10px;
 }
 
@@ -203,3 +255,11 @@ li {
     box-shadow: 3px 3px 8px -1px black;
 }
 
+#version {
+    text-align: right;
+    margin-left: 20px;
+    justify-content: center;
+    background-color: #66666688;
+    padding: 0px 10px;
+    border-radius: 2px;
+}
